@@ -13,4 +13,3 @@ for cyrillic, latin in zip(CYRILLIC_SYMBOLS, TRANSLATION):
 def normalize(name: str) -> str:
     translate_name = re.sub(r'[^a-zA-Z0-9\.]', '_', name.translate(TRANS))
     return translate_name
-
